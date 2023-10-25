@@ -61,7 +61,6 @@
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "PDF Version Changer";
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // SelectPDFs
             // 
@@ -101,7 +100,6 @@
             SelectPDFFiles.Filter = "PDF Files|*.pdf";
             SelectPDFFiles.Multiselect = true;
             SelectPDFFiles.RestoreDirectory = true;
-            SelectPDFFiles.FileOk += SelectPDFFiles_FileOk;
             // 
             // Form1
             // 
