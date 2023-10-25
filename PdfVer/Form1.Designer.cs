@@ -109,7 +109,9 @@
             ClientSize = new Size(384, 261);
             Controls.Add(groupBox1);
             ForeColor = SystemColors.InactiveCaptionText;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Form1";
             Text = "PdfVer";
             groupBox1.ResumeLayout(false);

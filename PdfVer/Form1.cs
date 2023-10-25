@@ -4,7 +4,7 @@ using PdfSharp.Pdf;
 namespace PdfVer
 {
     public partial class Form1 : Form
-    {    
+    {
         public Form1()
         {
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
@@ -24,10 +24,10 @@ namespace PdfVer
 
         private void ChangePDFVersion(string filePath, string targetVersion)
         {
-            string outputFilePath = Path.Combine(Path.GetDirectoryName(filePath), "changed_"+ Path.GetFileName(filePath));
+            string outputFilePath = Path.Combine(Path.GetDirectoryName(filePath), "changed_" + Path.GetFileName(filePath));
 
             try
-            {   
+            {
                 PdfDocument document = PdfReader.Open(filePath, PdfDocumentOpenMode.Modify);
                 document.Version = (int)(float.Parse(targetVersion) * 10);
                 document.Save(outputFilePath);
